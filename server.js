@@ -5,7 +5,7 @@ import productRoute from './routes/productRoute.js'
 import proposalRoute from './routes/proposalRoute.js'
 
 const app = express()
-const port = 5000
+const port = 5000 || process.env.PORT
 
 // middelware 
 app.use(express.json())
